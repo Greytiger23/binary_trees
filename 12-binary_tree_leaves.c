@@ -15,6 +15,10 @@ if (tree == NULL)
 {
 return (0);
 }
+if (tree->left == NULL && tree->right == NULL)
+{
+return (1);
+}
 a = binary_tree_leaves(tree->left);
 b = binary_tree_leaves(tree->right);
 return (a + b);

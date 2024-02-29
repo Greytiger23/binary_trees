@@ -16,8 +16,8 @@ if (node == NULL || node->parent == NULL || node->parent->parent == NULL)
 return (NULL);
 }
 x = node->parent;
-y = parent->parent;
-if (y->left == parent)
+y = x->parent;
+if (y->left == x)
 {
 return (y->right);
 }
