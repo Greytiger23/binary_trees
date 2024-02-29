@@ -17,15 +17,5 @@ return (0);
 }
 a = binary_tree_height(tree->left);
 b = binary_tree_height(tree->right);
-return (1 + max(a, b));
-}
-/**
- * max - function that gives the max
- * @x: list
- * @y: list
- * Return: void
- */
-size_t max(size_t x, size_t y)
-{
-return ((x > y) ? x : y);
+return (1 + (a > b ? a : b));
 }
