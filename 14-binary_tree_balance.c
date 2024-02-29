@@ -32,7 +32,7 @@ if (tree == NULL)
 {
 return (0);
 }
-a = tree->left ? 1 + binary_tree_height(tree->left) : 0;
-b = tree->right ? 1 + binary_tree_height(tree->right) : 0;
+a = tree->left ? 1 + binary_tree_height(tree->left) : 1;
+b = tree->right ? 1 + binary_tree_height(tree->right) : 1;
 return ((a > b) ? a : b);
 }
