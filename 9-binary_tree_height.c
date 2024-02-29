@@ -17,7 +17,7 @@ return (0);
 }
 a = binary_tree_height(tree->left);
 b = binary_tree_height(tree->right);
-return (1 + max(a, b);
+return (1 + max(a, b));
 }
 /**
  * max - function that gives the max

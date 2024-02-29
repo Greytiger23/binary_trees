@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include "binary_trees.h"
 
+bool binary_recu(const binary_tree_t *tree);
 /**
  * binary_tree_is_full - function that checks if a binary tree is full
  * @tree: list

@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include "binary_trees.h"
 
+bool perrecu(const binary_tree_t *tree, size_t x, size_t y);
 /**
  * binary_tree_is_perfect - function that checks if a binary tree is perfect
  * @tree: list
@@ -16,7 +18,7 @@ if (tree == NULL)
 return (0);
 }
 a = binary_tree_height(tree);
-return (perrecu(tree, 0, a);
+return (perrecu(tree, 0, a));
 }
 /**
  * perrecu - function that recursive
