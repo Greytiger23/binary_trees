@@ -40,4 +40,6 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 size_t max(size_t x, size_t y);
+bool binary_recu(const binary_tree_t *tree);
+bool perrecu(const binary_tree_t *tree, size_t x, size_t y);
 #endif
